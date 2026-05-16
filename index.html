@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Study Buddy</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- ── Header ─────────────────────────────────────────── -->
+    <header>
+      <div class="header-inner">
+        <div class="header-title">
+          <h1>🧠 AI Study Buddy</h1>
+          <p>Ask me anything — I'll help you learn!</p>
+        </div>
+        <button id="flashcards-btn" type="button">✨ Flashcards</button>
+      </div>
+    </header>
+
+    <!-- ── Main chat area ─────────────────────────────────── -->
+    <main>
+      <div id="chat-area">
+        <div id="typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Quiz card rendered here (below chat, above footer) -->
+      <div id="quiz-container" class="hidden">
+        <div id="quiz-card">
+          <div class="quiz-header">
+            <h2>📝 Quick Quiz</h2>
+            <button id="close-quiz-btn" type="button" class="icon-btn" aria-label="Close quiz">✕</button>
+          </div>
+          <div id="quiz-questions"></div>
+          <div id="quiz-score" class="hidden"></div>
+          <div class="quiz-actions">
+            <button id="try-again-btn" type="button" class="btn-secondary hidden">🔄 Try Again</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ── Footer / input bar ─────────────────────────────── -->
+    <footer>
+      <textarea id="user-input" placeholder="Type your message here..." rows="2"></textarea>
+      <button id="send-btn" type="button">Send</button>
+      <button id="clear-btn" type="button">Clear</button>
+    </footer>
+
+    <!-- ── Flashcard modal overlay ────────────────────────── -->
+    <div id="flashcard-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Flashcards">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2>🃏 Flashcards</h2>
+          <button id="close-flashcards-btn" type="button" class="icon-btn" aria-label="Close flashcards">✕</button>
+        </div>
+        <div id="flashcard-counter" class="card-counter"></div>
+        <div id="flashcard-scene">
+          <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="Click to flip card">
+            <div class="flashcard-face flashcard-front">
+              <p id="flashcard-front-text"></p>
+            </div>
+            <div class="flashcard-face flashcard-back">
+              <p id="flashcard-back-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-nav">
+          <button id="prev-card-btn" type="button" class="btn-secondary">← Prev</button>
+          <button id="next-card-btn" type="button" class="btn-secondary">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
