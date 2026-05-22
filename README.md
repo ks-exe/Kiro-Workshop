@@ -1,8 +1,8 @@
-# 🧠 AI Study Buddy
+#  AI Study Buddy
 
 An AI-powered web chatbot that helps students learn any topic through guided conversation using the Socratic method. Instead of giving direct answers, it asks guiding questions, generates quizzes, and creates flashcards to reinforce learning.
 
-## 🎓 About This Project
+##  About This Project
 
 This project was built as part of the **Seekho aur Banao** workshop series (Day 02) that I host to teach students how to use **Kiro** — an AI-powered development environment. The goal is to demonstrate how you can go from idea to a fully working application using Kiro's features like:
 
@@ -13,7 +13,7 @@ This project was built as part of the **Seekho aur Banao** workshop series (Day 
 
 Students follow along in the workshop to build this project from scratch using Kiro, learning how AI-assisted development works in practice.
 
-## ✨ Features
+##  Features
 
 - **Socratic Chat** — Ask any question and receive guided responses that lead you toward understanding rather than handing you the answer
 - **Quiz Generation** — Generate multiple-choice quizzes based on your conversation to test your knowledge
@@ -21,7 +21,7 @@ Students follow along in the workshop to build this project from scratch using K
 - **Dark Theme UI** — Clean, modern dark interface with responsive design
 - **Encouraging Feedback** — Every response ends with an encouraging phrase to keep you motivated
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -30,7 +30,7 @@ Students follow along in the workshop to build this project from scratch using K
 | AI Model | Groq API (LLaMA 3.3 70B Versatile) |
 | Testing | fast-check, jsdom, supertest |
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── server/
@@ -48,7 +48,7 @@ Students follow along in the workshop to build this project from scratch using K
 └── package.json           # Dependencies and scripts
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -87,14 +87,14 @@ Students follow along in the workshop to build this project from scratch using K
    http://localhost:3000
    ```
 
-## 📝 Usage
+##  Usage
 
 1. **Chat** — Type a question or topic in the input box and press Send (or Enter)
-2. **Generate Quiz** — After receiving an AI response, click the "📝 Generate Quiz" button below any message to get a 3-question multiple-choice quiz
-3. **Flashcards** — Click the "✨ Flashcards" button in the header to generate study cards from your conversation
+2. **Generate Quiz** — After receiving an AI response, click the " Generate Quiz" button below any message to get a 3-question multiple-choice quiz
+3. **Flashcards** — Click the " Flashcards" button in the header to generate study cards from your conversation
 4. **Clear** — Click "Clear" to reset the conversation and start fresh
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 # Integration tests
@@ -110,14 +110,14 @@ node tests/frontend.property.test.js
 node tests/backend.property.test.js & node tests/frontend.property.test.js & node tests/integration.test.js
 ```
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 | Variable | Purpose | Required |
 |----------|---------|----------|
 | `GROQ_API_KEY` | Groq API authentication key | Yes |
 | `PORT` | Server port (default: 3000) | No |
 
-## 🏗️ Architecture
+##  Architecture
 
 - **Single-page app** — One HTML file, one JS file, one CSS file
 - **Backend is a thin proxy** — Validates input, forwards to Groq API, returns response
@@ -125,7 +125,7 @@ node tests/backend.property.test.js & node tests/frontend.property.test.js & nod
 - **No database** — All data is ephemeral per browser session
 - **Frontend manages all state in memory** — Conversation history, quiz data, flashcard deck
 
-## 🤖 AI Behavior Rules
+##  AI Behavior Rules
 
 The AI tutor follows strict guidelines:
 - Never gives direct answers to homework/exam questions
@@ -135,7 +135,7 @@ The AI tutor follows strict guidelines:
 - Provides hints (not corrections) for incorrect answers
 - Ends every response with encouragement
 
-## 📄 License
+##  License
 
 This project is open source and available for educational purposes.
 
